@@ -1,5 +1,3 @@
-// import logo from './platzi.webp';
-import './App.css';
 import { TodoCounter } from './TodoCounter';
 import { TodoFilter } from './TodoFilter';
 import { TodoItem } from './TodoItem';
@@ -17,7 +15,7 @@ const defaultTodos=[
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <TodoCounter completed={16} total={25}/>
       <TodoFilter />
 
@@ -32,7 +30,7 @@ function App() {
     </TodoList>
 
     <CreateTodoButton />
-    </React.Fragment>
+    </>
   );
 }
 

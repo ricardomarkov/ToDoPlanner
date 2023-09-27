@@ -1,3 +1,4 @@
+import './TodoCounter.css';
 export { TodoCounter };
 
 function TodoCounter({total, completed}){
