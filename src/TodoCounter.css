@@ -1,6 +1,14 @@
 h1{
+    font-family: "Ubuntu Mono", monospace;
     font-Size: 44px;
     text-Align: center;
     margin: 0;
     padding: 48px;
+}
+
+.highlight{
+    color: deepskyblue;
+    display: inline-block;
+    padding: .25em 0;
+    background: #1a1d22;
 }

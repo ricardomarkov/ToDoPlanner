@@ -4,7 +4,7 @@ export { TodoCounter };
 function TodoCounter({total, completed}){
     return(
       <h1>
-        Has completado {completed} de {total} To Do's
+        <span class="highlight">~ Has completado {completed} de {total} To Do's</span>
       </h1>
     )
   }

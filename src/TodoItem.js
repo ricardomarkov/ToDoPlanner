@@ -4,9 +4,9 @@ export { TodoItem };
 function TodoItem(props){
     return(
       <li>
-        <span>V</span>
+        <span>&#x2611;</span>
         <p>{props.text}</p>
-        <span>X</span>
+        <span>&#x10102;</span>
       </li>
     );
   }

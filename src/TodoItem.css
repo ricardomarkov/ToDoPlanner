@@ -2,29 +2,36 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centra verticalmente los elementos dentro del flexbox */
-  width: 600px;
+  width: 25%;
   height: 72px;
   margin: 12px auto 0;
-  background-color: black;
-  color: white;
+  background-color: white;
   font-family: "Ubuntu Mono", monospace;
   font-size: 16px;
   position: relative;
+  border-radius: 4px;
 }
 
 li p {
+  color:black;
+  font-size:24px;
+  background:transparent;
   margin: auto;
   text-align: center; /* Centra horizontalmente el texto del elemento <p> */
 }
 
 li span:first-child {
+  font-size:2em;
+  color:black;
+  background:transparent;
   position: absolute;
-  top: 0;
-  right: 0;
+  right: 0.25em;
 }
 
 li span:last-child {
+  font-size:2em;
+  color:black;
+  background:transparent;
   position: absolute;
-  top: 0;
-  left: 0;
+  left: 0.25em;
 }
