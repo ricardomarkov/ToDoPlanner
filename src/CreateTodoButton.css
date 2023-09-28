@@ -1,7 +1,7 @@
-input{
+button{
     font-Size: 24px;
     text-Align: center;
-    margin: auto;
+    margin: 12px auto;
     padding: 18px;
     display: flex;
     box-sizing: border-box;

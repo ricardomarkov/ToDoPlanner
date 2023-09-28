@@ -1,6 +1,30 @@
-li{
-  list-style-type: none;
-  font-Size: 16px;
-    text-Align: center;
-    margin: 0;
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente los elementos dentro del flexbox */
+  width: 600px;
+  height: 72px;
+  margin: 12px auto 0;
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 16px;
+  position: relative;
+}
+
+li p {
+  margin: auto;
+  text-align: center; /* Centra horizontalmente el texto del elemento <p> */
+}
+
+li span:first-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+li span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
