@@ -1,3 +1,4 @@
+import './TodoFilter.css';
 export { TodoFilter };
 
 function TodoFilter(){
