@@ -2,6 +2,13 @@ import './CreateTodoButton.css';
 export { CreateTodoButton }
 function CreateTodoButton(){
     return(
-        <button class="create-todo-button">New Task</button>
+        <button className="create-todo-button" onClick={
+            (event)=>{
+                console.log('le diste click')
+                console.log(event)
+                console.log(event.target)
+            }
+        }
+        >New Task</button>
     )
 }
