@@ -3,10 +3,10 @@ export { TodoItem };
 
 function TodoItem(props){
     return(
-      <li>
-        <span>&#x2611;</span>
-        <p>{props.text}</p>
-        <span>&#x10102;</span>
+      <li className="TodoItem">
+        <span className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}>&#x2611;</span>
+        <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>{props.text}</p>
+        <span className="Icon Icon-Delete">&#x10102;</span>
       </li>
     );
   }
