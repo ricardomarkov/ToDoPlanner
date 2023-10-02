@@ -6,7 +6,7 @@ import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react';
 
 const defaultTodos=[
-  { text: '~ >Cortar cebolla', completed: false},
+  { text: '~ >Cortar cebolla', completed: true},
   { text: '~ >Terminar el curso de React.js', completed: false},
   { text: '~ >Hacer la cena', completed: true},
   { text: '~ >Limpiar el cuarto', completed: false},
@@ -14,13 +14,32 @@ const defaultTodos=[
 ];
 
 function App() {
+  const [todos, setTodos]=React.useState(defaultTodos)
+
+  const completedTodos = todos.filter(todo =>!!todo.completed).length;
+  const totalTodos= todos.length;
+
+  const [filterValue, setFilterValue] = React.useState('');
+  console.log('Los usuarios buscan: '+ filterValue);
+
+  const filteredTodos=todos.filter(
+    (todo)=>{
+      const todoText=todo.text.toLowerCase();
+      const filterText=filterValue.toLowerCase();
+      return todo.text.includes(filterText);
+    }
+  )
+
   return (
     <>
-      <TodoCounter completed={16} total={25}/>
-      <TodoFilter />
+      <TodoCounter completed={completedTodos} total={totalTodos}/>
+      <TodoFilter 
+      filterValue={filterValue}
+      setFilterValue={setFilterValue}
+      />
 
     <TodoList>
-      {defaultTodos.map(todo=>(
+      {filteredTodos.map(todo=>(
         <TodoItem
         key={todo.text}
         text={todo.text}
