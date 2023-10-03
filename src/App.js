@@ -32,7 +32,7 @@ function App() {
   const deleteTodo= (text)=>{
     const newTodos=[...todos];
     const todoIndex = newTodos.findIndex(
-      (todo)=> todo.text == text);
+      (todo)=> todo.text === text);
     newTodos.splice(todoIndex, 1);
     setTodos(newTodos);
   }
@@ -41,7 +41,7 @@ function App() {
     (todo)=>{
       const todoText=todo.text.toLowerCase();
       const filterText=filterValue.toLowerCase();
-      return todo.text.includes(filterText);
+      return todoText.includes(filterText);
     }
   )
 
