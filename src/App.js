@@ -4,18 +4,6 @@ import { TodoItem } from './TodoItem';
 import { TodoList } from './TodoList';
 import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react';
-import react from 'react';
-
-// const defaultTodos=[
-//   { text: '~ >Cortar cebolla', completed: true},
-//   { text: '~ >Terminar el curso de React.js', completed: false},
-//   { text: '~ >Hacer la cena', completed: true},
-//   { text: '~ >Limpiar el cuarto', completed: false},
-//   { text: '~ >Ordenar mi escritorio', completed: true}
-// ];
-
-// localStorage.setItem('TODOPLANNER_V1',JSON.stringify(defaultTodos));
-// localStorage.removeItem('TODOPLANNER_V1');
 
 function useLocalStorage(itemName, initialValue){
   const localStorageItem = localStorage.getItem(itemName);
