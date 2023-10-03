@@ -34,10 +34,6 @@ li span:last-child {
   position: absolute;
   left: 0.25em;
 }
-.Icon-Check--active {
-  color: #4caf50;
-}
-
 .TodoItem{
   background-color:#fafafa;
   position:relative;
@@ -54,28 +50,4 @@ li span:last-child {
   }
   .TodoItem-p--complete{
   text-decoration:line-through
-  }
-  .Icon{
-  cursor:pointer;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:48px;
-  width:48px;
-  font-size:24px;
-  font-weight:700
-  }
-  .Icon-Check{
-  position:absolute;
-  left:12px
-  }
-  .Icon-Delete{
-  position:absolute;
-  right:0
-  }
-  .Icon-Delete:hover{
-  color:red
-  }
-  svg{
-    background:transparent;
   }
