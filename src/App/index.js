@@ -2,7 +2,7 @@ import { useLocalStorage } from './useLocalStorage';
 import {AppUI} from './AppUI';
 import React from 'react';
 
-// localStorage.removeItem('TODOS_V1');
+// localStorage.removeItem('TODOPLANNER_V1');
 
 // const defaultTodos = [
 //   { text: 'Cortar cebolla', completed: true },
@@ -12,7 +12,7 @@ import React from 'react';
 //   { text: 'Usar estados derivados', completed: true },
 // ];
 
-// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+// localStorage.setItem('TODOPLANNER_V1', JSON.stringify(defaultTodos));
 
 function App() {
   const {

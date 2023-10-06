@@ -1,9 +1,12 @@
 import './TodoLoading.css';
 import React from 'react';
+import './TodoLoading.css';
 
 function TodoLoading(){
       return(
-      <p>Cargando...</p>
+        <li className="TodoItem">
+        <p className={`TodoItem-p "TodoItem-p--complete"}`}>Actualizando lista...</p>
+        </li>
       //
     )
   }
