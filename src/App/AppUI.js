@@ -7,39 +7,45 @@ import { TodoLoading} from '../TodoLoading';
 import { TodoError} from '../TodoError';
 import { TodoEmpty} from '../TodoEmpty';
 import { CreateTodoButton } from '../CreateTodoButton';
+import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext';
 
 function AppUI(){
-return (
+    const {
+        loading,
+        error,
+        filteredTodos,
+        completeTodo,
+        deleteTodo,
+        openModal,
+        setOpenModal
+    } = React.useContext(TodoContext);
+
+    return (
     <>
     <TodoCounter/>
     <TodoFilter/>
-    <TodoContext.Consumer>
-        {({
-            loading,
-            error,
-            filteredTodos,
-            completeTodo,
-            deleteTodo
-        })=>(
-            <TodoList>
-            {loading && <TodoLoading />}
-            {error && <TodoError/>}
-            {(!loading && filteredTodos.length === 0)&&<TodoEmpty/>}
+        <TodoList>
+        {loading && <TodoLoading />}
+        {error && <TodoError/>}
+        {(!loading && filteredTodos.length === 0)&&<TodoEmpty/>}
 
-            {filteredTodos.map(todo=>(
-            <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={()=>completeTodo(todo.text)}
-            onDelete={()=>deleteTodo(todo.text)}
-            />
+        {filteredTodos.map(todo=>(
+        <TodoItem
+        key={todo.text}
+        text={todo.text}
+        completed={todo.completed}
+        onComplete={()=>completeTodo(todo.text)}
+        onDelete={()=>deleteTodo(todo.text)}
+        />
         ))}
         </TodoList>
-        )}
-    </TodoContext.Consumer>
     <CreateTodoButton />
+    {openModal && (
+        <Modal>
+        La funcionalidad de agregar "To do's"
+        </Modal>
+    )}
     </>
     );
 }

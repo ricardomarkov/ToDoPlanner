@@ -11,6 +11,7 @@ function TodoProvider({children}){
         error
         }=useLocalStorage('TODOPLANNER_V1',[]);
         const [filterValue, setFilterValue] = React.useState('');
+        const [openModal, setOpenModal]=React.useState(true);
         const completedTodos = todos.filter(todo =>!!todo.completed).length;
         const totalTodos= todos.length;
         const filteredTodos=todos.filter(
@@ -46,6 +47,8 @@ function TodoProvider({children}){
             filteredTodos,
             completeTodo,
             deleteTodo,
+            openModal,
+            setOpenModal
         }}>
             {children}
         </TodoContext.Provider>
