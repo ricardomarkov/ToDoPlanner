@@ -10,7 +10,6 @@ function useLocalStorage(itemName, initialValue){
         try{
           const localStorageItem = localStorage.getItem(itemName);
           let parsedItem;
-  
           if(!localStorageItem){
             localStorage.setItem(itemName, JSON.stringify(initialValue));
             parsedItem=initialValue;
@@ -38,3 +37,15 @@ function useLocalStorage(itemName, initialValue){
     };
   }
   export {useLocalStorage};
+
+  // localStorage.removeItem('TODOPLANNER_V1');
+
+// const defaultTodos = [
+//   { text: 'Cortar cebolla', completed: true },
+//   { text: 'Tomar el Curso de Intro a React.js', completed: false },
+//   { text: 'Llorar con la Llorona', completed: false },
+//   { text: 'LALALALALA', completed: false },
+//   { text: 'Usar estados derivados', completed: true },
+// ];
+
+// localStorage.setItem('TODOPLANNER_V1', JSON.stringify(defaultTodos));

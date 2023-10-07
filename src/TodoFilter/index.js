@@ -1,16 +1,15 @@
+import { TodoContext } from '../TodoContext';
 import './TodoFilter.css';
 import React from 'react';
 export { TodoFilter };
 
-function TodoFilter({
+function TodoFilter(){
+  const {
   filterValue,
   setFilterValue
-}){
+} = React.useContext(TodoContext);
+
       return(
-      // <input placeholder="~>Ingresa una tarea para buscar" />
-      //
-      // <>
-      // <p>Diste click {state} veces</p>
       <form action="" className="search-bar">
         <input type="search" className="search" pattern=".*\S.*" required value={filterValue} onChange={(event)=>{setFilterValue(event.target.value)
         }}/>
