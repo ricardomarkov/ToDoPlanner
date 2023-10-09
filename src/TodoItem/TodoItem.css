@@ -35,6 +35,7 @@ li span:last-child {
   left: 0.25em;
 }
 .TodoItem{
+  width: 75%;
   background-color:#fafafa;
   position:relative;
   display:flex;
@@ -51,3 +52,4 @@ li span:last-child {
   .TodoItem-p--complete{
   text-decoration:line-through
   }
+
