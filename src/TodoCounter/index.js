@@ -10,7 +10,7 @@ function TodoCounter(){
   }= React.useContext(TodoContext)
     return(
       <h1>
-        <span class="highlight">~ Has completado {completedTodos} de {totalTodos} To Do's</span>
+        <span class="highlight">~Completed {completedTodos} / {totalTodos} To Do's</span>
       </h1>
     )
   }

@@ -4,7 +4,7 @@ import React from 'react';
 function TodoEmpty(){
       return(
       <li className="TodoItem">
-      <p>Crea tu primer "to do..."</p>
+      <p>Create your first "To do"!</p>
       </li>
     )
   }
