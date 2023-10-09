@@ -125,7 +125,7 @@
     width: 1px;
     height: 1px;
   }
-  
+
   /* Active state */
   .search-bar input:focus + .search-btn,
   .search-bar input:valid + .search-btn {
