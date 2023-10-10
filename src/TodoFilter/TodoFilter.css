@@ -1,16 +1,3 @@
-/* input{
-    font-Size: 24px;
-    text-Align: center;
-    margin: auto;
-    padding: 18px;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    height: 72px;
-    width: 600px; */
-    /* // */
-    /* Estilos generales que aplican a todos los elementos} */
 * {
     background: #282c34;
     color: #abb2bf;
@@ -26,9 +13,6 @@
     font: 20px Hind, sans-serif;
     line-height: 1.5em;
   }
-  /* input {
-    color: #171717;
-  } */
   .search-bar {
     display: flex;
   }
@@ -63,7 +47,7 @@
     margin: 12px auto;
     padding: 0;
     justify-content: center;
-    max-width: 25%;
+    max-width: 75%;
   }
   .search-bar input {
     background: transparent;
