@@ -27,7 +27,7 @@ const onChange=(event)=>{
 
     return (
         <form className="TodoForm" onSubmit={onSubmit}>
-            <label>Escribe tu nuevo 'To Do'</label>
+            <label>What would you like to add?</label>
             <textarea placeholder="Type your task here" value={newTodoValue} onChange={onChange}/>
             <div className="TodoForm-buttonContainer">
             <button type="button" className="TodoForm-button--cancel" onClick={onCancel}>Cancel</button>
