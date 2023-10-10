@@ -36,6 +36,7 @@ li span:last-child {
 }
 .TodoItem{
   width: 75%;
+  height: auto;
   background-color:#fafafa;
   position:relative;
   display:flex;
