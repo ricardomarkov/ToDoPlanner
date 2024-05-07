@@ -12,7 +12,6 @@ https://ricardomarkov.github.io/ToDoPlanner/
 
 - [@ricardomarkov](https://www.github.com/ricardomarkov)
 
-- 
 ## Deployment
 
 To deploy this project run
