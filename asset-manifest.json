@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ToDoPlanner/static/css/main.5e6137dc.css",
-    "main.js": "/ToDoPlanner/static/js/main.f90e7b83.js",
+    "main.js": "/ToDoPlanner/static/js/main.06e9a719.js",
     "static/media/delete.svg": "/ToDoPlanner/static/media/delete.85f30aa25f93fec6c23c03d479ea0b8c.svg",
     "index.html": "/ToDoPlanner/index.html",
     "static/media/check.svg": "/ToDoPlanner/static/media/check.4d8b4dab3213f879cbd28da95614a531.svg",
     "main.5e6137dc.css.map": "/ToDoPlanner/static/css/main.5e6137dc.css.map",
-    "main.f90e7b83.js.map": "/ToDoPlanner/static/js/main.f90e7b83.js.map"
+    "main.06e9a719.js.map": "/ToDoPlanner/static/js/main.06e9a719.js.map"
   },
   "entrypoints": [
     "static/css/main.5e6137dc.css",
-    "static/js/main.f90e7b83.js"
+    "static/js/main.06e9a719.js"
   ]
 }
