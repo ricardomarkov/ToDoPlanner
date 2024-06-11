@@ -4,7 +4,7 @@ import React from 'react';
 function TodoError(){
       return(
       <li className="TodoItem">
-      <p>Ha ocurrido un error, intenta recargar el sitio.</p>
+      <p>Error. Please reload website.</p>
       </li>
     )
   }
